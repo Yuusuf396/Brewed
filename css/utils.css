@@ -1,0 +1,255 @@
+:root{
+    --seconday--cream:#e4e6f4;
+    --primary--grey:#8b8e9a;
+    --green--lime:#088178;
+    --black--text:#1a1a1a;
+    --border-color:#cce7d0;
+    --deep-blue:#060f1e;
+    --white:#fff;
+    --red: #990000;
+    --white:#fff;
+}
+.products{
+    padding: 0 5rem;
+}
+.products_display{
+    display: grid;
+    grid-template-rows:repeat(2, 1fr);
+    grid-template-columns:repeat(4, 1fr);
+    justify-content: center;
+    padding: 4rem 8rem;
+    row-gap: 3rem;
+    column-gap: 3rem;
+
+}
+.products_header{
+    font-weight: 800;
+    font-size: 3.6rem;
+    color: var(--black--text);
+    text-align: center;
+}
+.products_paragraph{
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--primary--grey);
+    text-align: center;
+}
+.product_items{
+    width: 29rem;
+    display: flex;
+    /* align-items: center; */
+    text-align:center;
+    justify-content: center;
+    flex-direction: column;
+    border: .1px solid var(--border-color);
+    border-radius: 2rem;
+    padding: 1rem 2rem 2rem 1rem;
+    box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, .04);
+    cursor: pointer;
+}
+.product_items:hover{
+    box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, .06);
+    scale: 1.03;
+    transition: .3s ease-in-out;
+}
+.product_items img{
+    width: 100%;
+    border-radius: 1.3rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+.product_items span{
+    font-size: 1.5rem;
+    color: var(--primary--grey);
+    font-weight: 500;
+}
+.product_items p{
+    font-size: 2.4rem;
+    color: var(--black--text);
+    font-weight: 700;
+}
+.product_items .product_price{
+    color: var(--green--lime);
+    font-weight: 900;
+}
+.fa-star{
+    color: goldenrod;
+}
+
+/* /////////////////////////////////////////////////// */
+/* PROMO */
+.promo{
+    background-image: url(../assets/images/banner/b2.jpg);
+    margin-bottom: 3rem;
+    padding: 10rem 10rem;
+    color:var(--white) ;
+    text-align: center;
+    margin-top: 5rem;
+}
+.promo p{
+    font-size: 2rem;
+}
+
+.promo h4{
+    font-size: 4rem;
+    padding: 0 2rem;
+}
+.promo button{
+    background:var(--white);
+    color: var(--deep-blue);
+    padding:  1.4rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.promo button:hover{
+    color: var(--white);
+    background: var(--deep-blue);
+    transition: .3s ease-in-out;
+}
+.promo span{
+    color: var(--red);
+}
+/* /////////////////////// */
+/* Banner */
+.banner{
+    padding: 4rem 0;
+}
+#banner_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+    gap: 4rem;
+}
+#banner_buttom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2rem 4rem;
+    column-gap: 1.5rem;
+    /* width: 100%; */
+}
+/* #banner_buttom div{
+    width: 100%;
+} */
+
+
+/* Crazy deals */
+.crazy_deals{
+    background-image: url(../assets/images/banner/b17.jpg);
+    padding: 4rem 4rem;
+    height: 40vh;
+    width: 80vh;
+    text-align: start;
+}
+.crazy_deals:hover button{
+    background: var(--white);
+    color: var(--primary--grey);
+    transition: .3s ease-in-out;
+}
+.crazy_deals p{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+.crazy_deals h3{
+    font-size: 4rem;
+    color: var(--primary--grey);
+    line-height: 1;
+    font-size: 800;
+}
+.crazy_deals button{
+    background: var(--primary--grey);
+    color: var(--white);
+    border: none;
+    padding: 1rem 1.3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+ 
+/* ////////////////////////// */
+/* FEMALE WEARS */
+.female_wears{
+    background-image: url(../assets/images/banner/b10.jpg);
+    padding: 4rem 4rem;
+    height: 40vh;
+    width: 80vh;
+    text-align: start;
+}
+
+.female_wears p{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+}
+.female_wears h3{
+    font-size: 4rem;
+    color: var(--white);
+    line-height: 1;
+    font-size: 800;
+    padding: 3rem 0;
+}
+.female_wears button{
+    background: transparent;
+    color: var(--white);
+    border: none;
+    padding: 1rem 1.3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid var(--deep-blue);
+}
+.female_wears:hover button{
+    background: var(--white);
+    color: var(--primary--grey);
+    transition: .3s ease-in-out;
+    border: none;
+}
+/* Bucket Hats */
+.bucket_hats{
+    background-image: url(../assets/images/banner/b17.jpg);
+    padding: 2rem 2.5rem;
+    height: 25vh;
+    width: 40vh;
+    /* min-width: 30%; */
+    text-align:center ;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.joggers{
+    background-image: url(../assets/images/banner/b14.png);
+    padding: 2rem 2.5rem;
+    height: 25vh;
+    width: 40vh;
+    /* min-width: 30%; */
+    text-align:center ;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.vests{
+    background-image: url(../assets/images/menImages/BREWED-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: 20rem 10rem; */
+    background-position: top 25% right 25%;
+    padding: 2rem 2.5rem;
+    height: 25vh;
+    width: 40vh;
+    /* min-width: 30%; */
+
+    text-align:center ;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.vests:hover{
+    filter: blur(.05rem);
+    background-size: 104%;
+    transition: .2s ease-in;
+}
