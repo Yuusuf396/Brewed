@@ -23,7 +23,9 @@ html{
 }
  
 /* HOME */
-
+img{
+    width: fit-content;
+}
 /* NAVBAR */
 nav{ 
     background-color: var(--seconday--cream);
