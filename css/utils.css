@@ -416,7 +416,10 @@ footer p{
  
   @media screen and (max-width:768px) {
     html{
-        font-size: 52.5%;
+        font-size: 55.5%;
+    }
+    img{
+        width: 70%;
     }
     .products_display{
         grid-template-columns:1fr;
@@ -425,5 +428,13 @@ footer p{
     .product_items{
     width: 35rem;
 
+    }
+  }
+  @media screen and (max-width:486px) {
+    html{
+        font-size: 50%;
+    }
+    img{
+        width: 65%;
     }
   }

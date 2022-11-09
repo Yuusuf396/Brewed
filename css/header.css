@@ -191,10 +191,16 @@ h1{
     cursor: pointer;
 }
 @media screen and (max-width:768px) {
+    html{
+        font-size: 55.5%;
+    }
+    img{
+        width: 70%;
+    }
     /* Navbar */
     nav{
         justify-content: space-between;
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
     .nav-links{
       
@@ -244,3 +250,13 @@ h1{
         display: none;
     }
 }
+
+@media screen and (max-width:486px) {
+    html{
+        font-size: 50%;
+    }
+    img{
+        width: 65%;
+    }
+  }
+
