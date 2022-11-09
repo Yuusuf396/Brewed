@@ -9,6 +9,9 @@
     --red: #990000;
     --white:#fff;
 }
+html{
+    font-size: 62.5%;
+}
 img{
     width: 100%
 }
@@ -412,6 +415,9 @@ footer p{
   }
  
   @media screen and (max-width:768px) {
+    html{
+        font-size: 52.5%;
+    }
     .products_display{
         grid-template-columns:1fr;
         /* grid-template-columns:repeat(4, 1fr , minmax(768px, 1fr) ); */
