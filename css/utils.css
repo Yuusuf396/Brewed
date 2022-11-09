@@ -9,6 +9,9 @@
     --red: #990000;
     --white:#fff;
 }
+img{
+    width: 100%
+}
 .products{
     padding: 0 5rem;
 }
@@ -27,6 +30,7 @@
     font-size: 3.6rem;
     color: var(--black--text);
     text-align: center;
+    margin-top: 2rem;
 }
 .products_paragraph{
     font-weight: 500;
@@ -35,7 +39,7 @@
     text-align: center;
 }
 .product_items{
-    width: 29rem;
+    width: 30rem;
     display: flex;
     /* align-items: center; */
     text-align:center;
@@ -95,27 +99,29 @@
     padding: 0 2rem;
 }
 .promo button{
-    background:var(--white);
-    color: var(--deep-blue);
+    background:transparent;
+    color: var(--white);
     padding:  1.4rem 3rem;
     font-size: 1.5rem;
     font-weight: 600;
+    border: 2px solid var(--white);
     border-radius: 1rem;
-    border: none;
+     
     cursor: pointer;
 }
 .promo button:hover{
-    color: var(--white);
-    background: var(--deep-blue);
+    color: var(--deep-blue);
+    background: var(--white);
     transition: .3s ease-in-out;
 }
 .promo span{
     color: var(--red);
 }
-/* /////////////////////// */
+/* ///////////////////////////////////////////////////////////////// */
 /* Banner */
 .banner{
     padding: 4rem 0;
+    background-color: var();
 }
 #banner_top{
     display: flex;
@@ -125,13 +131,15 @@
     padding: 2rem 4rem;
     gap: 4rem;
 }
-#banner_buttom{
+#banner_buttom div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     padding: 2rem 4rem;
-    column-gap: 1.5rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    
     /* width: 100%; */
 }
 /* #banner_buttom div{
@@ -139,9 +147,13 @@
 } */
 
 
+/* /////////////////////// */
 /* Crazy deals */
 .crazy_deals{
-    background-image: url(../assets/images/banner/b17.jpg);
+    background-image: url(../assets/images/Group/BREWED-60.jpg);
+    /* color: var(--white); */
+    background-size: cover;
+    background-position: top 25% right 25%;
     padding: 4rem 4rem;
     height: 40vh;
     width: 80vh;
@@ -160,7 +172,7 @@
 }
 .crazy_deals h3{
     font-size: 4rem;
-    color: var(--primary--grey);
+    color: var(--white);
     line-height: 1;
     font-size: 800;
 }
@@ -176,7 +188,9 @@
 /* ////////////////////////// */
 /* FEMALE WEARS */
 .female_wears{
-    background-image: url(../assets/images/banner/b10.jpg);
+    background-image: url(../assets/images/Group/BREWED-58.jpg);
+    background-size: cover;
+    background-position: top 25% right 25%;
     padding: 4rem 4rem;
     height: 40vh;
     width: 80vh;
@@ -196,8 +210,8 @@
     padding: 3rem 0;
 }
 .female_wears button{
-    background: transparent;
-    color: var(--white);
+    background: var(--white);
+    color: var(--primary--grey);
     border: none;
     padding: 1rem 1.3rem;
     border-radius: 1rem;
@@ -205,32 +219,46 @@
     border: 2px solid var(--deep-blue);
 }
 .female_wears:hover button{
-    background: var(--white);
-    color: var(--primary--grey);
+    color: var(--white);
+    background: var(--primary--grey);
     transition: .3s ease-in-out;
     border: none;
 }
 /* Bucket Hats */
-.bucket_hats{
-    background-image: url(../assets/images/banner/b17.jpg);
+.shorts{
+    background-image: url(../assets/images/shorts.jpg);
     padding: 2rem 2.5rem;
-    height: 25vh;
-    width: 40vh;
-    /* min-width: 30%; */
+    height: 40vh;
+    width: 80vh;
+    color: var(--white);
+    background-size: cover;
+    background-position: top 25% right 25%;
     text-align:center ;
     font-size: 2rem;
     font-weight: 600;
+    cursor: pointer;
 }
-
+.shorts:hover{
+    background-size: 104%;
+    transition: .2s ease-in;
+}
 .joggers{
-    background-image: url(../assets/images/banner/b14.png);
+    background-image: url(../assets/images/menImages/BREWED-55banner-image.jpg);
     padding: 2rem 2.5rem;
-    height: 25vh;
-    width: 40vh;
+    height: 40vh;
+    width: 80vh;
     /* min-width: 30%; */
+    background-size: cover;
+    background-position: top 25% right 25%;
     text-align:center ;
     font-size: 2rem;
     font-weight: 600;
+    color: var(--white);
+    cursor: pointer;
+}
+.joggers:hover{
+    background-size: 104%;
+    transition: .2s ease-in;
 }
 .vests{
     background-image: url(../assets/images/menImages/BREWED-7.jpg);
@@ -239,10 +267,10 @@
     /* background-size: 20rem 10rem; */
     background-position: top 25% right 25%;
     padding: 2rem 2.5rem;
-    height: 25vh;
-    width: 40vh;
+    height: 40vh;
+    width: 80vh;
     /* min-width: 30%; */
-
+    color: var(--white);
     text-align:center ;
     font-size: 2rem;
     font-weight: 600;
@@ -253,3 +281,143 @@
     background-size: 104%;
     transition: .2s ease-in;
 }
+.hoodies{
+    background-image: url(../assets/images/Group/BREWED-25.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: 20rem 10rem; */
+    background-position: top 25% right 25%;
+    padding: 2rem 2.5rem;
+    height: 40vh;
+    width: 80vh;
+    /* min-width: 30%; */
+    color: var(--white);
+    text-align:center ;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hoodies:hover{
+    filter: blur(.05rem);
+    background-size: 104%;
+    transition: .2s ease-in;
+}
+/* FOOTER */
+footer{
+    background: var(--seconday--cream);
+  
+    padding: 3rem 6rem;
+}
+.footer_logo{
+    width: 11rem;
+    /* z-index: 2; */
+}
+.footer_logo img{
+    width: 100%;
+}
+.footer_layout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul{
+    list-style: none;
+}
+footer p{
+    font-size: 2rem;
+    font-weight:800;
+    color: var(--primary--grey);
+}
+ .insta{
+    padding:1.5rem 0;
+ }
+ .twitter{
+    padding:1.5rem 0;
+ }
+.insta:hover{ 
+     color: #d6249f; 
+    scale: 108%;
+    transition: 1s ease all;
+}
+.twitter:hover{
+    color:#1d9bf0; 
+    scale: 108%;
+    transition: 1s ease all;
+}
+.footer_links{
+    /* width: 3rem; */
+    height: 1rem;
+    color: var(--primary--grey);
+    /* padding: 3rem; */
+}
+.footer-link{
+  list-style: none;
+}
+.footer-link a{
+    text-decoration: none;
+    color: var(--primary--grey);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footer-link a:hover{    
+    transition: 1s ease ;
+    color: var(--green--lime);  
+}
+
+
+.copywright{
+    text-align: center;
+    align-self: center;
+    padding-top: 2rem;
+
+}
+.copywright a{
+    text-decoration: none;
+    color: var(--primary--grey);
+}
+.copywright .dev{
+    color: var(--green--lime);
+    padding-top: 4rem;
+
+}
+
+
+
+#myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--primary--grey);
+    color: var(--seconday--cream);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.3s;
+  }
+ 
+  @media screen and (max-width:768px) {
+    .products_display{
+        grid-template-columns:1fr;
+        /* grid-template-columns:repeat(4, 1fr , minmax(768px, 1fr) ); */
+    }
+    .product_items{
+    width: 35rem;
+
+    }
+  }

@@ -7,13 +7,12 @@
     <meta name="description" content="The brewed brand landing page."/>
     <meta name="robots" content="noindex"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/nav.css"/>
-    <!-- <link rel="stylesheet" href="./css/utils.css"> -->
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/utils.css">
     <title>BREWED|Online store</title>
 </head>
 <body>
-    <nav>
-       
+    <nav class="navbar"> 
         <div class="logo">
             <a href="#"><img src="./assets/images/brewed_logo.png" alt="logo"></a>
            
@@ -24,9 +23,13 @@
             <li class="nav-link"><a href="shop.html">Shop</a></li>
             <li class="nav-link"><a href="contact.html">Contact</a></li>
             <li class="nav-link"><a href="about.html">OnSale</a></li>
+            <div id="close"><i class="fas fa-times fa-2x"></i></div>
         </ul>
+        <div id="responsive">
+            <i id="bar"class="fa-solid fa-bars-staggered fa-2x"></i>
+        </div>
     </nav>
-    <section class="landing">
+    <section id="header" class="landing">
         <div class="header_text">
             <p class="header_text_paragraph">OFFERS</p>
             <h1>Super value </h1>
@@ -320,7 +323,7 @@
                 </span>
             </div>
              <div class="product_items">
-                <img data-src="./assets/images/womenImages/BREWED-28.jpg" alt="">
+                <img data-src="./assets/images/womenImages/BREWED-28.jpg" loading="lazy"alt="">
                 <span>Brewed</span>
                 <p>Cargo Pants</p>
                 <div>
@@ -341,7 +344,7 @@
         <div id="banner_top">
             <div class="crazy_deals">
                 <p>crazy deals</p>
-                <h3>By 6 get 1 free</h3>
+                <h3>Check out the store</h3>
                 <p>Best sale</p>
                 <button>Learn More</button>
             </div>
@@ -352,25 +355,54 @@
             </div>
         </div>
         <div id="banner_buttom">
-            <div class="bucket_hats">
-                Bucket hats
+            <div>
+                <div class="shorts">
+                    Shorts 
+                </div>
+                <div class="joggers">
+                    Joggers
+                </div>
             </div>
-            <div class="joggers">
-                Joggers
-            </div>
-            <div class="vests">
-                Vests
-            </div>
-           
+                <div>
+                    <div class="vests">
+                    Vests
+                </div>
+                <div class="hoodies">
+                    Hoodies
+                </div>
+           </div>
         </div>
        
     </section>
     <footer class="footer">
-        <div class="logo">
-            <a href="#"><img src="./assets/images/brewed_logo.png" alt="logo"></a>           
-        </div>
+        <div class="footer_layout">
+            <div class="footer_logo">
+                <a href="#"><img src="./assets/images/brewed_logo.png" alt="logo"></a>           
+            </div>
+            <div>
+                <p>Contact us</p>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-3x footer_links insta"></i></a> </li>
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-3x footer_links twitter"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="footer-link"><a class="active footer_map_link" href="index.html">Home</a></li>
+                    <li class="footer-link"><a href="blog.html">Blog</a></li>
+                    <li class="footer-link"><a href="shop.html">Shop</a></li>
+                    <li class="footer-link"><a href="contact.html">Contact</a></li>
+                    <li class="footer-link"><a href="about.html">OnSale</a></li>
+                </ul>
+            </div>
+            
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+        </div> 
+        <p class="copywright">© <a href=" https://twitter.com/_Ayours">adebayoyuusuuf </a>2022</p>
+        <p class="copywright">Contact the developer:<a class="dev" href="https://twitter.com/_Ayours">here</a> </p>
     </footer>
     <script src="./js/nav.js"></script>
     <script src="./js/lazy_load.js"></script>
+    <script src="./js/scrollTotop.js"></script>
 </body>
 </html>
