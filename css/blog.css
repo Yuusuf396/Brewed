@@ -1,0 +1,28 @@
+:root{
+    --seconday--cream:#e4e6f4;
+    --primary--grey:#8b8e9a;
+    --green--lime:#088178;
+    --black--text:#1a1a1a;
+    --border-color:#cce7d0;
+    --deep-blue:#060f1e;
+    --white:#fff;
+    --red: #990000;
+    --white:#fff;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    width: 100%
+}
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blockquote{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -51,7 +51,7 @@ nav{
 .nav-links .nav-link a{
     text-decoration: none;
     color: var(--black--text);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     position: relative;
 }
@@ -256,10 +256,13 @@ h1{
 
 @media screen and (max-width:486px) {
     html{
-        font-size: 50%;
+        font-size: 53%;
     }
     img{
         width: 65%;
+    }
+    .nav-link a{
+        font-size: 3rem;
     }
   }
 
